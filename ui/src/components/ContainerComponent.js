@@ -8,7 +8,7 @@ class ContainerComponent extends Component {
     }
 
     componentWillMount(){
-        // vitual dom işlemleri bittikten sonra  component real-dom a bağlanmadan hemen önce çalışır.
+        // virtual dom işlemleri bittikten sonra  component real-dom a bağlanmadan hemen önce çalışır.
         document.write("componentWillMount <br/>");
     }
     componentWillUnmount(){
@@ -18,7 +18,7 @@ class ContainerComponent extends Component {
         document.write("componentWillUpdate <br/>");
     }
     componentDidMount(){
-         // vitual dom işlemleri bittikten sonra  component real-dom a bağlanmadan hemen önce çalışır.
+         // virtual dom işlemleri bittikten sonra  component real-dom a bağlanmadan hemen önce çalışır.
          document.write("componentDidMount <br/>");
     }
     componentDidUpdate(){
