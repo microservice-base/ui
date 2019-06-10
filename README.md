@@ -1,5 +1,5 @@
 # ui
-ui of simple project
+react based ui project
 
 ### 
 `cd ui/`
