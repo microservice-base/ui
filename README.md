@@ -1,6 +1,14 @@
 # ui
 react based ui project
 
+
+### template
+```
+
+yarn create react-app my-app
+
+```
+
 ### 
 `cd ui/`
 
