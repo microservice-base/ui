@@ -2,10 +2,13 @@ import React, { Component } from "react";
 
 
 class Products extends Component {
-
+    constructor(props){
+        super(props);
+    }
+    
     render() {
         return (
-            <table class="table">
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
