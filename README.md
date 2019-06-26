@@ -2,6 +2,13 @@
 react based ui project
 
 
+
+### docker 
+
+```
+docker build -t image-ui  -f container/docker/Dockerfile .
+```
+
 ### template
 ```
 
