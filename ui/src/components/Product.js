@@ -1,13 +1,19 @@
-import React,{Component} from "react";
+import React, { Component } from "react";
 
 class Product extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
     }
 
-    render(){
+    render() {
+        const { id,name,count } = this.props;
+
         return (
-            <h1>Product</h1>
+            <tr>
+                <td>{id}</td>
+                <td>{name}</td>
+                <td>{count}</td>
+            </tr>
         )
     }
 
