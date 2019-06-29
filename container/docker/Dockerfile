@@ -10,4 +10,4 @@ WORKDIR /ui/ui
 # init dependency
 RUN yarn 
 
-CMD ["/bin/bash" "-c", " yarn start "]
+CMD ["yarn", "start"]
