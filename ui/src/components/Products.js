@@ -8,7 +8,7 @@ class Products extends Component {
 
     render() {
 
-        const { productList } = this.props;
+        const { productList,productDelete } = this.props;
 
 
         return (
@@ -23,11 +23,17 @@ class Products extends Component {
                 <tbody>
                     {
                         productList.map(row => {
-                            return <Product
-                                key={row.id} // kayıtlara unique değer gerekli
-                                id={row.id}
-                                name={row.name}
-                                count={row.count} />;
+                            return <Product 
+                                    key={row.id}
+                                    rowInfo ={row}
+                                    productDelete={productDelete}/>
+
+                            // return <Product
+                            //     key={row.id} // kayıtlara unique değer gerekli
+                            //     id={row.id}
+                            //     name={row.name}
+                            //     count={row.count} />;
+                            
                         })
                     }
                 </tbody>
