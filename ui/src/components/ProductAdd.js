@@ -7,8 +7,15 @@ class ProductAdd extends Component {
 
         this.state = {
             valName: '',
-            valCount: 0
+            valCount: ''
         }
+    }
+
+    clearState(){
+        this.setState({
+            valName: '',
+            valCount: ''
+        })
     }
 
     onNameChange(event) {
@@ -24,9 +31,6 @@ class ProductAdd extends Component {
     }
 
     onSubmitFormListener(event) {
-        console.log("hell");
-        
-
         const {productAdd} = this.props;
         
         const obj = {
@@ -37,6 +41,8 @@ class ProductAdd extends Component {
 
 
         productAdd(obj);
+
+        this.clearState();
 
         event.preventDefault(); // tüm sayfanın render olmasını engeller
     }
