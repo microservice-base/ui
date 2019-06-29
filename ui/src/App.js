@@ -3,12 +3,10 @@ import Products from './components/Products';
 import ProductAdd from './components/ProductAdd';
 
 class App extends Component {
-  constructor (props){
+  constructor(props) {
     super(props);
 
-    this.productDelete = this.productDelete.bind(this);
-
-    this.state = { 
+    this.state = {
       // buradaki state ismi setState içindeki parametreden geliyor. 
       // Bu nedenle farklı isim verilemiyor.
       products: [
@@ -29,10 +27,13 @@ class App extends Component {
         }
       ]
     }
-    
+
+    this.productDelete = this.productDelete.bind(this);
+    this.productAdd = this.productAdd.bind(this);
+
   }
 
-  productDelete(id){
+  productDelete(id) {
     let updatedProducts = this.state.products;
 
     updatedProducts = updatedProducts.filter(row => row.id !== id);
@@ -43,14 +44,25 @@ class App extends Component {
 
   }
 
+  productAdd(productObj) {
+    let updatedProducts = this.state.products;
+
+    updatedProducts.push(productObj);
+
+    this.setState({
+      products: updatedProducts
+    })
+
+  }
+
   render() {
     return (
       <div className="App">
-        <ProductAdd />
-        <br/>
-        <Products 
-            productList = {this.state.products}
-            productDelete ={this.productDelete} />
+        <ProductAdd  productAdd={this.productAdd} />
+        <br />
+        <Products
+          productList={this.state.products}
+          productDelete={this.productDelete} />
       </div>
     );
   }
