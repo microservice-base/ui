@@ -12,7 +12,7 @@ class Product extends Component {
         console.log(id);
 
         const { productDelete } = this.props;
-        
+
         productDelete(id) // bir üstteki metoda gönderdi
     }
 
@@ -27,8 +27,8 @@ class Product extends Component {
                 <td>{rowInfo.name}</td>
                 <td>{rowInfo.count}</td>
                 <td>
-                    <button id="deleteBtn" className="btn btn-danger" type="button" 
-                    onClick={this.onDeleteClick.bind(this, rowInfo.id)}>
+                    <button id="deleteBtn" className="btn btn-danger" type="button"
+                        onClick={this.onDeleteClick.bind(this, rowInfo.id)}>
                         Delete
                     </button>
                 </td>

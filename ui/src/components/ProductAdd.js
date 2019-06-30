@@ -11,7 +11,7 @@ class ProductAdd extends Component {
         }
     }
 
-    clearState(){
+    clearState() {
         this.setState({
             valName: '',
             valCount: ''
@@ -31,12 +31,12 @@ class ProductAdd extends Component {
     }
 
     onSubmitFormListener(event) {
-        const {productAdd} = this.props;
-        
+        const { productAdd } = this.props;
+
         const obj = {
-            id:Math.random(),
-            name:this.state.valName,
-            count:this.state.valCount
+            id: Math.random(),
+            name: this.state.valName,
+            count: this.state.valCount
         };
 
 
@@ -73,8 +73,8 @@ class ProductAdd extends Component {
                             value={valCount}
                             onChange={this.onCountChange.bind(this)} />
                         <hr />
-                        <button id="inputSave" 
-                            className="btn btn-primary" 
+                        <button id="inputSave"
+                            className="btn btn-primary"
                             type="submit" >
                             Add
                         </button>
