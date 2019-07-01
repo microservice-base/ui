@@ -6,6 +6,7 @@ react based ui project
 ### docker 
 
 ```
+
 $ git clone https://github.com/microservice-base/ui.git
 $ cd ui
 $ docker build --no-cache  -t image-ui  -f container/docker/Dockerfile .
