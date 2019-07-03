@@ -1,5 +1,5 @@
 # ui
-react based ui project
+react js based ui project
 
 
 
