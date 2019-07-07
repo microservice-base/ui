@@ -7,14 +7,14 @@ class ProductAdd extends Component {
 
         this.state = {
             valName: '',
-            valCount: ''
+            valCount: 0
         }
     }
 
     clearState() {
         this.setState({
             valName: '',
-            valCount: ''
+            valCount: 0
         })
     }
 
