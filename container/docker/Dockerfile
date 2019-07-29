@@ -7,6 +7,7 @@ RUN git clone https://github.com/microservice-base/ui.git
 
 WORKDIR /ui/ui
 
+# i will add yarn build command for production
 # init dependency
 RUN yarn 
 
