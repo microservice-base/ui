@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes  from "prop-types";
 
 class Product extends Component {
     constructor(props) {
@@ -37,5 +38,16 @@ class Product extends Component {
     }
 
 }
+
+Product.propTypes = {
+    rowInfo : PropTypes.object.isRequired
+    // id : PropTypes.number.isRequired,
+    // name : PropTypes.string.isRequired,
+    // count : PropTypes.number.isRequired
+};
+
+// Product.defaultProps = {    
+// }
+
 
 export default Product;
