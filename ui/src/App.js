@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Products from './components/Products';
 import ProductAdd from './components/ProductAdd';
+import ProductModal from './components/ProductModal';
 
 class App extends Component {
   constructor(props) {
@@ -58,7 +59,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ProductAdd  productAdd={this.productAdd} />
+        
+        <ProductModal productAdd={this.productAdd}/>
+        <br />
+        
         <br />
         <Products
           productList={this.state.products}
