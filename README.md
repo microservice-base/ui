@@ -17,14 +17,14 @@ $ docker build --no-cache  -t image-ui  -f container/docker/Dockerfile .
 
 
 $  docker pull keramiozsoy/image-ui
-$  docker run -it --rm --name app-ui -p 8002:8002 image-ui // just run
+$  docker run -it --rm --name app-ui -p 8005:8005 image-ui // just run
 
 or
 
 $  git clone https://github.com/microservice-base/ui.git
 $  cd basket
 $  docker build -t image-ui  -f container/docker/Dockerfile . 
-$  docker run -d --name app-ui -p 8002:8002 image-ui
+$  docker run -d --name app-ui -p 8005:8005 image-ui
 
 $  docker rmi $(docker images | grep "<none>" | awk '{print $3}')
 $  docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq)
