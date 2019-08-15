@@ -10,14 +10,9 @@ react js based ui project
 
 ```
 
-$ git clone https://github.com/microservice-base/ui.git
-$ cd ui
-$ docker build --no-cache  -t image-ui  -f container/docker/Dockerfile .
-
-
 
 $  docker pull keramiozsoy/image-ui
-$  docker run -it --rm --name app-ui -p 8005:8005 image-ui // just run
+$  docker run -it --rm --name app-ui -p 8005:8005 keramiozsoy/image-ui // just run
 
 or
 
