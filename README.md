@@ -16,10 +16,10 @@ $  docker run -it --rm --name app-ui -p 8005:8005 keramiozsoy/image-ui // just r
 
 or
 
-$  git clone https://github.com/microservice-base/ui.git
-$  cd ui
-$  docker build -t image-ui  -f container/docker/Dockerfile . 
-$  docker run -d --name app-ui -p 8005:8005 image-ui
+$ git clone https://github.com/microservice-base/ui.git
+$ cd ui 
+$ docker build --no-cache  -t image-ui  -f container/docker/Dockerfile .
+$ docker run -d --name app-ui -p 8005:3000 image-ui:latest
 
 $  docker rmi $(docker images | grep "<none>" | awk '{print $3}')
 $  docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -aq)
