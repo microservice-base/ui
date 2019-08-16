@@ -17,7 +17,7 @@ $  docker run -it --rm --name app-ui -p 8005:8005 keramiozsoy/image-ui // just r
 or
 
 $  git clone https://github.com/microservice-base/ui.git
-$  cd basket
+$  cd ui
 $  docker build -t image-ui  -f container/docker/Dockerfile . 
 $  docker run -d --name app-ui -p 8005:8005 image-ui
 
