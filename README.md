@@ -29,17 +29,14 @@ $  docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -
 
 ### template
 ```
-
 yarn create react-app my-app
-
 ```
 
 ### 
-`cd ui/`
-
-### 
-https://yarnpkg.com
-
-`yarn start`
-
+```
+cd ui
+yarn start
+```
 [http://localhost:3000](http://localhost:3000)
+
+
