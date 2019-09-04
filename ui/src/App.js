@@ -59,7 +59,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
+        <hr />
         <ProductModal productAdd={this.productAdd}/>
         <br />
         
