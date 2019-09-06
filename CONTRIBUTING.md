@@ -3,7 +3,7 @@
 **microservice-base/ui** is an open source project, and your feedback and contributions
 are needed and always welcome.
 
-[Issues] and [Pull Requests] are opened at https://github.com/microservice-base/basket.
+[Issues] and [Pull Requests] are opened at https://github.com/microservice-base/ui.
 
 Non trivial changes should be discussed with the project maintainers by
 opening a [Feature Request] clearly explaining rationale, background
