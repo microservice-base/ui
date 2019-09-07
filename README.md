@@ -13,7 +13,7 @@ This project is provide us to see all system
 
 
 $  docker pull keramiozsoy/image-ui
-$  docker run -it --rm --name app-ui -p 8005:8005 keramiozsoy/image-ui // just run
+$  docker run -it --rm --name app-ui -p 8005:3000 keramiozsoy/image-ui // just run
 
 or
 
