@@ -28,7 +28,7 @@ $  docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -
 
 ```
 
-### template
+### how to create app to react-app template
 ```
 yarn create react-app my-app
 ```
