@@ -9,15 +9,15 @@ This project is provide us to see all system
 
 ```
 
-yarn create react-app my-app
+$ yarn create react-app my-app
 
 ```
 
 ## how to run project
 ```
-
-cd ui
-yarn start
+$ git clone https://github.com/microservice-base/account.git
+$ cd ui
+$ yarn start
 
 open http://localhost:3000
 
