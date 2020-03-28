@@ -24,7 +24,7 @@ open http://localhost:3000
 ```
 
 
-## Contributing
+## contributing
 
 [Contributing guide](CONTRIBUTING.md).
 
