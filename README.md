@@ -3,14 +3,35 @@ react js based ui project
 
 This project is provide us to see all system
 
+
+
+## how to create project
+
+```
+
+yarn create react-app my-app
+
+```
+
+## how to run project
+```
+
+cd ui
+yarn start
+
+open http://localhost:3000
+
+```
+
+
 ## Contributing
 
 [Contributing guide](CONTRIBUTING.md).
 
-### docker 
+
+## docker 
 
 ```
-
 
 $  docker pull keramiozsoy/image-ui
 $  docker run -it --rm --name app-ui -p 8005:3000 keramiozsoy/image-ui // just run
@@ -27,17 +48,4 @@ $  docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -
 
 
 ```
-
-### template
-```
-yarn create react-app my-app
-```
-
-### 
-```
-cd ui
-yarn start
-```
-[http://localhost:3000](http://localhost:3000)
-
 
