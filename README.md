@@ -24,11 +24,6 @@ open http://localhost:3000
 ```
 
 
-## contributing
-
-[Contributing guide](CONTRIBUTING.md).
-
-
 ## docker 
 
 ```
@@ -48,4 +43,10 @@ $  docker inspect -f '{{.Name}} - {{.NetworkSettings.IPAddress }}' $(docker ps -
 
 
 ```
+
+
+
+## contributing
+
+[Contributing guide](CONTRIBUTING.md).
 
