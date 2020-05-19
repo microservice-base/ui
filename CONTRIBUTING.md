@@ -14,6 +14,6 @@ Once the proposal is approved, a Pull Request can be opened. If you want
 to provide early visibility to reviewers, create a [Draft Pull Request].
 
 [Issues]: https://github.com/microservice-base/ui/issues
-[Pull Requests]: https://github.com/microservice-base/ui/issues
+[Pull Requests]: https://github.com/microservice-base/ui/pulls
 [Feature Request]: https://github.com/microservice-base/ui/issues/new?template=feature_request.md
 [Draft Pull Request]: https://github.blog/2019-02-14-introducing-draft-pull-requests/
